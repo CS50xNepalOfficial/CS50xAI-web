@@ -23,10 +23,10 @@ export default function App() {
 	const menuItems = [
 		['/', 'Home'],
 		['/#about', 'About Us'],
-		['/syllabus', 'Syllabus'],
-		['/local_team', 'Local Team'],
+		['/#syllabus', 'Syllabus'],
+		['/#local_team', 'Local Team'],
 		['/#faqs', 'FAQs'],
-		['/code-of-conduct', 'Code of Conduct'],
+		['/#code-of-conduct', 'Code of Conduct'],
 	];
 	useEffect(() => {
 		const sections = document.querySelectorAll('section');

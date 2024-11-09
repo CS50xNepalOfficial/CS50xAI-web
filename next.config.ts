@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  devIndicators: {
-    appIsrStatus: false,
-  },
+	devIndicators: {
+		appIsrStatus: false,
+	},
+  basePath: '/CS50xAI-web',
 };
 
 export default nextConfig;

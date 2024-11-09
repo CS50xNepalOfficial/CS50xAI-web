@@ -1,11 +1,11 @@
 'use client';
 import Image from 'next/image';
 import { Link, Button } from '@nextui-org/react';
-import FrequentlyAskedQuestion from '../app/faqs/page';
+import FrequentlyAskedQuestion from '@/app/faqs/page';
 import AboutUs from '@/app/about/AboutUs';
-import Testimonials from '../app/testimonials/page';
-import Sponsor from '../app/sponsors/page';
-import Instructor from './instructors/page';
+import Testimonials from '@/app/testimonials/page';
+import Sponsor from '@/app/sponsors/page';
+import Instructor from '@/app/instructors/page';
 
 export default function Home() {
 	return (
