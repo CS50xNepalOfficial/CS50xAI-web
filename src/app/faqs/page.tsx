@@ -1,12 +1,11 @@
-import React from 'react'
-import FAQcomponent from './faqs'
-import { FAQList } from './faq_list'
+import React from 'react';
+import FAQcomponent from './faqs';
+import { FAQList } from './faq_list';
 
-export default function FrequentlyAskedQuestion() {
-    return (
-        <div className='top-24 relative'>
-            <FAQcomponent FAQs={FAQList} />
-        </div>
-
-    )
+export default function LocalTeam() {
+	return (
+		<section id="faqs" className="top-12 relative bg-offWhite">
+			<FAQcomponent FAQs={FAQList} />
+		</section>
+	);
 }

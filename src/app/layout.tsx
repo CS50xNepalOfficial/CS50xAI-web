@@ -1,28 +1,42 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "@/styles/globals.css";
-import Navbar from "@/app/navbar";
-import Footer from "./footer/page";
-const poppins = Poppins({ weight: "300", subsets: [] });
+import type { Metadata } from 'next';
+import './globals.css';
+import { Poppins } from 'next/font/google';
+import Navbar from '@/components/Navbar';
+import PreviousEdition from '@/components/PreviousEdition';
+import Footer from '../app/footer/page';
 
+const poppins = Poppins({
+	weight: '400',
+	subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
-  title: "CS50xNepal",
-  description: "CS50xNepal is a community of students who are passionate about computer science and technology.",
+	title: 'CS50 AI With Python',
+	description:
+		'CS50 AI with Python is an adaptation of famous CS50 course at the doorstep of IOE, Purwanchal Campus.',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={poppins.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<head>
+				<link
+					rel="icon"
+					href="/icon?<generated>"
+					type="image/<generated>"
+					sizes="<generated>"
+				/>
+			</head>
+			<body className={`bg-offWhite ${poppins.className}`}>
+				<Navbar />
+				<PreviousEdition />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }
